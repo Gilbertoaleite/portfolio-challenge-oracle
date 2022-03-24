@@ -62,23 +62,28 @@ header p:before {
     font-weight: 700;
 }
 
+.hidden{
+    display: none;
+}
+
 /* Main */
 /* main {} */
 
 /* Seção de apresentação */
 .apresentacao {
-    background-color: #F5F5F5;
+    background: #F5F5F5;
     height: 520px;
     padding: 30px 10px;
+    
 }
 .apresentacao img {
-    width: 368px;
-    height: 368px;
+    width: 318px;
+    height: 318px;
     border-radius: 80%;
     border: 4px solid #3f5de0;
     display: block;
     float: right;
-    margin: 3em 9em 0 0;
+    margin: 3em 5em 0 0;
 }
 .apresentacao h1 {
     display: block;
@@ -86,13 +91,16 @@ header p:before {
     font-weight: bold;
     margin: 2.4em 0 0.5em 2.1em;
     width: 55%;
+    line-height: 1.2em;
 }
 .apresentacao p {
     font-size: 22px;
+    font-weight: 300;
     display: block;
     flex-wrap: wrap;
     margin: 0 0 1em 5em;
     width: 53%;
+    line-height: 1.6em;
 }
 .links-sociais {
     width: 40%;
@@ -120,7 +128,7 @@ header p:before {
 
 /* Seção Sobre Mim */
 .sobre-mim {
-    background-color: #D4E4FA;
+    background: #D4E4FA;
     height: 343px;
     padding-top: 70px;
 }
@@ -131,9 +139,12 @@ header p:before {
     font-size: 32px;
 }
 .sobre-mim p {
+    font-size: 18px;
+    font-weight: 200;
     display: block;
     width: 60%;
     margin: 2% 0 0 8%;
+    line-height: 1.5em;
 }
 
 /* Seção Skills e Hobbies */
@@ -284,17 +295,12 @@ header p:before {
 /* Seção Experiência / em desenvolvimento */
 
 .expTitulo{
-    margin-bottom: 5vh;
+    margin: 1em auto;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
 }
 
-/* .experiencia {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
 
 .experiencia-cont {
     display: flex;
@@ -304,21 +310,38 @@ header p:before {
 
 
 .projetosContainer {
-    margin: 3vh 0;
+    margin: 1em;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 3vw;
+    gap: 3em;
 }
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
 
 .detalheContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    line-height: 1.5em;
+    width: 450px ;
+}
+
+.detalheContainer > p{
+    margin: 0.5em;
+    color: inherit;
 }
 
 .projetoImg{
-    width: 50vw; 
+    width: 40em;
+    max-height: 30em; 
+    margin-left: 2em;
+
 }
 
 .nomeprojeto {
@@ -328,36 +351,32 @@ header p:before {
     font-weight: bold;
 }
 
-.repoBtn {
-    width: 120px;
+.repoBtn, .demoBtn {
+    margin: 1em;
+    width: 150px;
     height: 60px;
-    margin-top: 1vh;
-    border: 1px solid hsl(214, 77%, 52%);
-    color: hsl(214, 77%, 52%);
-    box-shadow: 5px 3px 3px black;
+    padding: 1em auto;
+    border: none;
+    border-radius: 0.5em;
+    background:#2A7AE4;
     text-align: center;
     cursor: pointer;
+    
+    transition: 0.2s;
 }
 
-.demoBtn {
-    width: 110px;
-    height: 60px;
-    margin-top: 1vh;
-    margin-left: 1vw;
-    background-color:hsl(214, 77%, 52%);
-    color: hsl(0, 33%, 94%);
-    box-shadow: 5px 3px 3px black;
-    text-align: center;
-    cursor: pointer;
+.repoBtn > a, .demoBtn > a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
-.repoBtn:hover {
-    filter: brightness(50%);
+.demoBtn:hover,.repoBtn:hover {
+    filter: brightness(0.8);
 }
 
-.demoBtn:hover {
-    filter: brightness(105%);
-}
+
 
 .demoBtn:active {
     box-shadow: none;
