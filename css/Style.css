@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    background-color: #F5F5F5;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+header p {
+/*  display: inline-block;
+    position: absolute;*/
+    margin: 0.1rem auto auto 5em;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+header p:before {
+    display: inline-block;
+    content: url("../Imagens/Logo.png");
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+}
+
+.nome-header2 {
+    display: none;
+}
+
+#menu {
+    display: flex;
+    gap: 1rem;
+    margin: auto 6.5em auto auto;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 0.5rem;
+}
+
+.gmail {
+    font-weight: 700;
+}
+
+/* Main */
+/* main {} */
+
+/* Seção de apresentação */
+.apresentacao {
+    background-color: #F5F5F5;
+    height: 520px;
+    padding: 30px 10px;
+}
+.apresentacao img {
+    width: 368px;
+    height: 368px;
+    border-radius: 80%;
+    border: 4px solid #3f5de0;
+    display: block;
+    float: right;
+    margin: 3em 9em 0 0;
+}
+.apresentacao h1 {
+    display: block;
+    font-size: 52px;
+    font-weight: bold;
+    margin: 2.4em 0 0.5em 2.1em;
+    width: 55%;
+}
+.apresentacao p {
+    font-size: 22px;
+    display: block;
+    flex-wrap: wrap;
+    margin: 0 0 1em 5em;
+    width: 53%;
+}
+.links-sociais {
+    width: 40%;
+    margin: 0 0 0 7em;
+}
+
+.links-sociais li {
+    display: inline-block;
+    margin-right: 38px;
+}
+
+.links-sociais a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.links-sociais li::after {
+    content: url(../Imagens/seta-link2.png);
+    position: absolute;
+    margin-left: .2px;
+    margin-top: -5px;
+
+}
+
+/* Seção Sobre Mim */
+.sobre-mim {
+    background-color: #D4E4FA;
+    height: 343px;
+    padding-top: 70px;
+}
+
+.sobre-mim h2 {
+    display: block;
+    margin: 0 0 0 8%;
+    font-size: 32px;
+}
+.sobre-mim p {
+    display: block;
+    width: 60%;
+    margin: 2% 0 0 8%;
+}
+
+/* Seção Skills e Hobbies */
+.container-skills-hobbies {
+    background-color: #F5F5F5;
+    padding-bottom: 4%;
+}
+.skills {
+    display: block;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    padding-top: 3rem;
+
+}
+.skills p {
+    position: absolute;
+    margin: 85% auto 1% 5%;
+    font-weight: bold;
+}
+.skills li {
+    width: 174px;
+    height: 176px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 5% auto;
+    border-radius: 2%;
+    box-shadow: 2px 2px 2px rgba(204, 204, 204, 0.76);
+    position: relative;
+
+}
+.skills img {
+    position: absolute;
+    margin: 62% auto 1% 5%;
+}
+.hobbies {
+    display: block;
+}
+.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.hobbies h2 {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    padding-top: 3rem;
+}
+.hobbies p {
+    position: absolute;
+    margin: 85% auto 1% 5%;
+    font-weight: bold;
+}
+.hobbies li {
+    width: 174px;
+    height: 176px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 5% auto;
+    border-radius: 2%;
+    box-shadow: 2px 2px 2px rgba(204, 204, 204, 0.76);
+    position: relative;
+}
+.hobbies img {
+    position: absolute;
+    margin: 62% auto 1% 5%;
+}
+
+/* Seção Formação */
+
+.formacao {
+    background-color: #D4E4FA;
+}
+.formacao h2 {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    padding-top: 3rem;
+}
+.formacoes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+}
+.bloco-formacoes {
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 8% auto 5% auto;
+    border-radius: 2%;
+    box-shadow: 4px 4px 4px rgba(204, 204, 204, 0.76);
+    position: relative;
+    width: 400px;
+    height: 268px;
+}
+
+.logo-uninove{
+    width: 80%;
+    margin: 18% 10% 0 9%;
+}
+
+.logo-alura {
+    width: 60%;
+    margin: 17% 10% 0 20%;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+}
+
+.formacoes div h3 {
+    margin: 0.02em 0 0 0;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+
+}
+.formacoes div p {
+    margin: 0.2em 0 2em 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    padding-bottom: 2%;
+}
+
+/* Seção Experiência / em desenvolvimento */
+
+.expTitulo{
+    margin-bottom: 5vh;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* .experiencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+.experiencia-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.projetosContainer {
+    margin: 3vh 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3vw;
+}
+
+.detalheContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.projetoImg{
+    width: 50vw; 
+}
+
+.nomeprojeto {
+    width: 25vw;
+    margin-bottom: 1vh;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.repoBtn {
+    width: 120px;
+    height: 60px;
+    margin-top: 1vh;
+    border: 1px solid hsl(214, 77%, 52%);
+    color: hsl(214, 77%, 52%);
+    box-shadow: 5px 3px 3px black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.demoBtn {
+    width: 110px;
+    height: 60px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    background-color:hsl(214, 77%, 52%);
+    color: hsl(0, 33%, 94%);
+    box-shadow: 5px 3px 3px black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.repoBtn:hover {
+    filter: brightness(50%);
+}
+
+.demoBtn:hover {
+    filter: brightness(105%);
+}
+
+.demoBtn:active {
+    box-shadow: none;
+}
+
+.repoBtn:active{
+    box-shadow: none;
+
+}
+
+
+.formulario {
+    display: flex;
+    margin: 10% auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formulario img {
+    max-width: 464px;
+    max-height: 604px;
+}
+form {
+    display: block;
+    padding: 5px 10px 0 10px;
+    margin: 17px 0 0 0;
+}
+form h3 {
+    margin: 0 0 10px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: left;
+}
+form legend {
+    margin: 0 0 30px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+}
+
+input, textarea {
+    border: 1px solid rgb(225, 223, 223);
+    box-shadow: 2px 4px 4px 4px darkgray;
+}
+
+label  {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: -1.3rem;
+    margin-left: 0.5rem;
+}
+
+label:checked {
+    color: rgba(12, 94, 201, 1);
+}
+
+input:focus, textarea:focus {
+    border-bottom: 4px solid #0c5ec9;
+}
+
+textarea {
+    margin: 15px 0;
+}
+
+form input {
+    display: block;
+    margin: 0 0 30px;
+    padding: 9px 15px 2px;
+    width: 100%;
+    height: 60px;
+}
+
+form textarea {
+    padding: 5px 20px;
+    margin: 0 0 18px;
+}
+
+input[type='submit'] {
+    color: white;
+    background-color: #2A7AE4;
+    width: 60%;
+
+    transition: 0.4s;
+}
+input[type='submit']:hover{
+    filter: brightness(0.8);
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 4px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #D4E4FA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0 25px;
+}
+/* footer p {} */
+
