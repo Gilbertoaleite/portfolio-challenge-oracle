@@ -1,3 +1,4 @@
+import { valida } from "./validacao.js";
 
 //menu hamburguer mobile 
 const btnMobile = document.getElementById('btn-mobile');
@@ -17,3 +18,7 @@ const btnMobile = document.getElementById('btn-mobile');
 
     btnMobile.addEventListener('click', abreMenu);
     btnMobile.addEventListener('touchstart', abreMenu);
+
+ input.addEventListener('blur', (evento) => {
+      valida(evento.target)
+   })

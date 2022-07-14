@@ -200,28 +200,38 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
             </section>
             <section class="formulario">
                 <img src="Imagens/foto-contato.png" alt="Foto Contato">
-                <fielset>
-                    <form>
+			<form action="https://formsubmit.co/gilbertoaleite@gmail.com" method="POST" /
+                <fiedlset>
+                   
                         <h3>Contato</h3>
-                        <legend>Quer entrar em contato comigo? <br>
-                            Preencha o formulário abaixo que entrarei em contato o mais rápido possível.</legend>
+                        <legend>Quer entrar em contato comigo?
+					<br>
+			Preencha o formulário abaixo que entrarei em contato o mais rápido possível.
+					</legend> 
+					<br>
+                          <div class="input-container>
                         <label for="nome"> Nome</label>
-                            <input type="text" name="nome" ID="nome">
-
+                         <input type="text" name="nome" id="nome" required>
+				<span class="input-mensagem-erro"></span>
+				</div>
+				<div class="input-container>
                         <label for="email"> E-mail</label>
-                            <input type="email" name="email" id="email" >
-
+                            <input type="email" name="email" id="email" required>
+					 <span class="input-mensagem-erro"></span>
+					
+				</div>
                         <label for="assunto"> Assunto</label>
                             <input type="text" name="assunto" id="assunto">
 
                         <label for="mensagem">Mensagem</label>
-                            <textarea type="text" cols="80" rows="7" name="mensagem" id="mensagem"  placeholder="Mensagem // Está em desenvolvimento, não está sendo enviado mensagem."></textarea >
+                            <textarea type="text" cols="80" rows="7" name="mensagem" id="mensagem" required  placeholder="Digite a sua mensagem"></textarea >
 
                         <label for="botao">
-                            <input type="submit" name="botao" id="botao" value="Enviar Mensagem" disabled>
+                            <input type="submit" name="botao" id="botao"  value="Enviar Mensagem">
                         </label>
-                    </form>
-                </fielset>
+                   
+                </fiedlset>
+			</form>
             </section>
             <footer>
                 <p>&copy Desenvolvido por Gilberto A Leite
@@ -229,6 +239,7 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
             </footer>
         </main>
 
-        <script src="JavaScript/funcao.js"></script>
+        <script type="module" src="JavaScript/funcao.js"></script>
+       
     </body>
 </html>
